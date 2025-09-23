@@ -1,3 +1,4 @@
+#!/bin/bash
 
 PERSON1=jaffa
 PERSON2=Daffa
