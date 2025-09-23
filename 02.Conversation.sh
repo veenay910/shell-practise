@@ -2,10 +2,7 @@
 
 # conversation b/w two members
 
-PERSON1=jaffa
-PERSON2=Daffa
-
-echo "$PERSON1 uresh How are you"
-echo "$PERSON2 : Hi $PERSON1 fine"
-echo "$PERSON2 : whar are you doing"
-echo "suresh : Learning course $PERSON1"
+echo "Ramesh: How are you Suresh"
+echo "Suresh: Fine Ramesh"
+echo "Ramesh: what are you doing"
+echo "Suresh: learning course Ramesh"
