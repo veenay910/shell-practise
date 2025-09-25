@@ -2,3 +2,4 @@
 
 DATE=(date)
 
+echo "display the date = $DATE
