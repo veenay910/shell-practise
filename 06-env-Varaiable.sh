@@ -2,6 +2,5 @@
 
 #export command usage
 
-echo "forest smaguler"
+echo "course name is : $COURSE
 
-echo KILLER=Verapan
