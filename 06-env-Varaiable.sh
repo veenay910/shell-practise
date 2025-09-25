@@ -2,5 +2,4 @@
 
 #export command usage
 
-echo "course name is : $COURSE
-
+echo "course name is : $COURSE"
