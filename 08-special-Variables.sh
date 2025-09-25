@@ -9,3 +9,7 @@ echo "All variables passed to the script = $*"
 echo "script name= $0"
 
 echo "hostname =$HOSTNAME"
+
+echo "current working path = $PWD"
+
+echo "calendr = $CAL"
