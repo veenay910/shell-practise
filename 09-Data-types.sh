@@ -8,6 +8,8 @@ NAME=DEVOPS
 
 # if you add name in arthematic operations considered it value as 0
 
+echo "SUM=$(($NUMBER1+$NUMBER2+$NAME))"
+
 SUM=$(($NUMBER1+$NUMBER2+$NAME))
 
 echo "sum of two numbers $SUM"
