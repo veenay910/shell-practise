@@ -2,4 +2,4 @@
 
 DATE=(date)
 
-echo "display the date = $DATE
+echo "display the date = $DATE"
