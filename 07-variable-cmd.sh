@@ -4,8 +4,16 @@ DATE=$(date)
 
 echo "display the date = $DATE"
 
-TIME=$(cal)
+CAL=$(cal)
 
-echo "display the time --> $TIME"
+echo "display the time --> $CAL"
 
 
+A=10
+B=5
+
+echo "c is diff of A and B"
+
+C=$((A-B))
+
+echo "value of C is $C"
