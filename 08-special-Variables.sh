@@ -7,3 +7,5 @@ echo "and"
 echo "All variables passed to the script = $*"
 
 echo "script name= $0"
+
+echo "hostname =$whoami"
