@@ -4,7 +4,7 @@ DATE=$(date)
 
 echo "display the date = $DATE"
 
-TIME=$(time)
+TIME=$(cal)
 
 echo "display the time --> $TIME"
 
