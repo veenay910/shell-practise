@@ -17,3 +17,9 @@ echo "sum of two numbers $SUM"
 LEADERS=("Putin" "modi" "trump")
 
 echo "all leaders ${LEADERS[@]}"
+
+echo "first leader ${LEADERS[0]}"
+
+echo "second leader ${LEADERS[1]}"
+
+echo "third leader ${LEADERS[2]}"
