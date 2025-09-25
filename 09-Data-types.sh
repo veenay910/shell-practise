@@ -14,3 +14,6 @@ SUM=$(($NUMBER1+$NUMBER2+$NAME))
 
 echo "sum of two numbers $SUM"
 
+LEADERS=("Putin" "modi" "trump")
+
+echo "all leaders $LEADERS"
