@@ -18,3 +18,5 @@ echo "c is diff of A and B"
 C=$((A-B))
 
 echo "value of C is $C"
+
+
