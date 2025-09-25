@@ -4,8 +4,11 @@
 
 NUMBER1=100
 NUMBER2=200
+NAME=DEVOPS
 
-SUM=$(($NUMBER1+$NUMBER2))
+# if you add name in arthematic operations considered it value as 0
+
+SUM=$(($NUMBER1+$NUMBER2+$NAME))
 
 echo "sum of two numbers $SUM"
 
