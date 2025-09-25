@@ -14,6 +14,12 @@ echo "current working path = $PWD"
 
 echo "calendr = $CAL"
 
-echo "PID = $$"
-
 echo "Number of arguments passed in the script $$"
+
+echo " PID of last command in  background is $$"
+
+echo "who is running this $USER"
+
+sleep 10 &
+
+echo " PID of last coammnd in backgorund is $!"
