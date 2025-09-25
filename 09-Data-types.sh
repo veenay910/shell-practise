@@ -16,4 +16,4 @@ echo "sum of two numbers $SUM"
 
 LEADERS=("Putin" "modi" "trump")
 
-echo "all leaders $LEADERS"
+echo "all leaders ${LEADERS[@]}"
