@@ -6,6 +6,6 @@ echo "display the date = $DATE"
 
 TIME=$(time)
 
-echo " display the time --> $TIME"
+echo "display the time --> $TIME"
 
 
