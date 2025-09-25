@@ -13,3 +13,7 @@ echo "hostname =$HOSTNAME"
 echo "current working path = $PWD"
 
 echo "calendr = $CAL"
+
+echo "PID = $$"
+
+echo "Number of arguments passed in the script $$"
