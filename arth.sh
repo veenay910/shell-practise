@@ -15,7 +15,7 @@ read NUM
 if [ $NUM -ge 75 ]; then
     echo "Grade A"
 
-else [ ($NUM -lt 75) ]; then
+else [ $NUM -lt 75 ]; then
     echo "Grade B"
 
 
