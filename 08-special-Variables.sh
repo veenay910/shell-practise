@@ -14,11 +14,11 @@ echo "current working path = $PWD"
 
 echo "calendr = $CAL"
 
-echo "Number of arguments passed in the script $$"
+echo "PID of the current script $$"
 
-echo " PID of current shell instance is $$"
+echo " Number of arugmentes passed $#"
 
-echo "who is running this $USER"
+echo "who is running this $USER "
 
 sleep 10 &
 
