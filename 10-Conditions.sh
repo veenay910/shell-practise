@@ -22,8 +22,10 @@
 NUMBER=$1
 
 if [ $NUMBER -gt 10 ]; then
+    echo "value enterd is $NUMBER"
 	echo " given value is >10"
 else
+    echo "value enterd is $NUMBER"
     echo "given value is <10"
 
 fi
