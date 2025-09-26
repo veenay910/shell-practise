@@ -12,16 +12,16 @@ echo $(( $x + $y ))
 echo  "enter the marks:"
 read NUM
 
-if [ $NUM -ge 75 ]; then
+if [ $NUM -ge 90 ]; then
     echo "Grade A"
 
-elif [ $NUM -le 75 ]; then
+elif [ $NUM -ge 70 ]; then
     echo "Grade B"
 
-elif [ $NUM -le 55 ]; then
+elif [ $NUM -ge 50 ]; then
     echo "Grade C"
 
-elif [ $NUM -le 35 ]; then
+elif [ $NUM -ge 35 ]; then
     echo "Grade D"
 
 else
