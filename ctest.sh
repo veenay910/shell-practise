@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NUMBER=$1
+read NUMBER
 
 if [ $((NUMMBER % 2)) ]; then
 
