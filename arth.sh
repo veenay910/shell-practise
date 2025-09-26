@@ -18,8 +18,14 @@ if [ $NUM -ge 75 ]; then
 elif [ $NUM -le 75 ]; then
     echo "Grade B"
 
+elif [ $NUM -le 55 ]; then
+    echo "Grade C"
+
+elif [ $NUM -le 35 ]; then
+    echo "Grade D"
+
 else
-    echo "NA"
+    echo "fail"
 
 
 fi
