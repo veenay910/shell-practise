@@ -12,7 +12,7 @@ echo $(( $x + $y ))
 echo  "enter the marks:"
 read NUM
 
-if [ ($NUM -ge 75) ]; then
+if [ $NUM -ge 75 ]; then
     echo "Grade A"
 
 else [ ($NUM -lt 75) ]; then
