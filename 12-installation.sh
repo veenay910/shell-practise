@@ -13,10 +13,10 @@ USERID=$(id -u)
 
 if [ $USERID -ne 0 ]; then
 
-    echo "$USERID"
+    echo "permission value of user is $USERID"
     echo "ERROR:: script should be run using sudo permissions"
 
 else
-     echo "$USERID"
+     echo "permission value of user is $USERID "
     echo "Script is running through sudo permissions"
 fi
