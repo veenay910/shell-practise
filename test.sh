@@ -6,4 +6,6 @@ read name
 echo  "welcome $name" 
 
 echo "File name is $0" #$0 gives the current file name
-echo $#
+echo $# 
+
+echo "This is a test"; echo "This is another test"

@@ -24,3 +24,5 @@ sleep 10 &
 
 echo " PID of last coammnd in backgorund is $!"
 
+echo " status of the command $?"
+
