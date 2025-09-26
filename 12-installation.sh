@@ -16,7 +16,4 @@ if ($USERID -ne 0); then
 
 else
     echo "Script is running through sudo permissions"
-
-#dnf install mysql-server -y
-#systemctl enable mysqld
-#systemctl start mysqld 
+fi
