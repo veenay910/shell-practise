@@ -20,3 +20,7 @@ else
      echo "permission value of user is $USERID "
     echo "Script is running through sudo permissions"
 fi
+
+dnf install mysql-server -y
+systemctl enable mysqld
+systemctl start mysqld  
