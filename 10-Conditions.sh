@@ -19,7 +19,7 @@
 
 # -gt   -eq -ne
 
-NUMBER=20
+NUMBER=$1
 
 if [ $NUMBER -gt 10 ]; then
 	echo " >10 "
