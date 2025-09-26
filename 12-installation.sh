@@ -17,5 +17,6 @@ if [ $USERID -ne 0 ]; then
     echo "ERROR:: script should be run using sudo permissions"
 
 else
+     echo "$USERID"
     echo "Script is running through sudo permissions"
 fi
