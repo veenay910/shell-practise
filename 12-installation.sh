@@ -22,6 +22,25 @@ else
 fi
 
 dnf install mysql-server -y
-systemctl enable mysqld
-systemctl start mysqld  
-systemctl status mysqld 
+
+if [ $? eq 0 ]; then
+    echo "No error found"
+    echo "Installation completed successfully'
+fi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#systemctl enable mysqld
+#systemctl start mysqld  
+#systemctl status mysqld 
