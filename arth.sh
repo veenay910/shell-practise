@@ -41,3 +41,12 @@ else
     #else print this
     echo "a is not equal to b"
 fi
+
+echo "Enter password"
+read pass
+if [ $pass="password" ]
+then
+  echo "The password is correct."
+else
+  echo "The password is incorrect, try again."
+fi
