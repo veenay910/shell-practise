@@ -23,7 +23,7 @@ fi
 
 dnf install mysql-server -y
 
-if [ $? eq 0 ]; then
+if [ $? -eq 0 ]; then
     echo "No error found"
     echo "Installation completed successfully"
 
