@@ -12,27 +12,8 @@
 USERID=$(id -u)
 
 if [ $USERID -ne 0 ]; then
-
-    echo "permission value of user is $USERID"
-    echo "ERROR:: script should be run using sudo permissions"
-
-else
-     echo "permission value of user is $USERID "
-    echo "Script is running through sudo permissions"
+    echo "Not running with sudo permissions"
 fi
-
-dnf install mysql-server -y
-
-if [ $? -eq 0 ]; then
-    echo "No error found"
-    echo "Installation completed successfully"
-else [ $? -ne 0 ];
-    echo "error found"
-    echo "installation failed"
-
-fi
-
-
 
 
 
