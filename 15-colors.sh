@@ -9,7 +9,7 @@ else
     echo "Sudo permission verified proceeding"
 fi
 
-dnf list installed nginx
+dnf list nginx
 if [ $? -ne 0 ]; then
     echo "Nginx not installed"
 else
