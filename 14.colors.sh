@@ -11,6 +11,3 @@ living=$1
 echo -e "What is your name $R vinay $N"
 
 
-read -p "What is your age $G $AGE $N"
-
-read -p "where are you living $living" 
