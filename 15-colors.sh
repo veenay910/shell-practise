@@ -1,6 +1,6 @@
 #!/bin.bash
 
-UID=$(id -u)
+USERID=$(id -u)
 
 if [ $? -ne 0 ]; then
     echo "ERROR: Should run only with sudo privilages"
