@@ -5,8 +5,8 @@
 # 1. Need to run with sudo user
 # 2. if not stop the installation
 # 3. if yes install the mysql 
-# 4. #? exit status of previous command 0=success, otherwise failed
-#
+# 4. #? exit status of previous command 0=success, otherwise failed0
+#5. Install the application
 #
 
 
