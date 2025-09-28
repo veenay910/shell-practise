@@ -12,12 +12,12 @@ fi
 dnf list installed nginx
 if [ $? -ne 0 ]; then
     echo "Nginx not installed"
-elif [ $? -eq 0 ]; then
+    echo "proceedin to install nginx"
+dnf install nginx -y
+else [ $? -eq 0 ]; then
     echo "nginx already installed --- skipping"
     echo "Already installed on "
 dnf history list nginx | head -3 | tail -1 | awk '{print $7}'
-else
-dnf install nginx -y
 fi
 
 
