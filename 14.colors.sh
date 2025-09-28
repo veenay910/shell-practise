@@ -5,7 +5,7 @@ R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
-AGE=$age
+AGE=$22
 
 echo -e "What is your name $R vinay $N"
 
