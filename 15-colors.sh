@@ -5,6 +5,8 @@ USERID=$(id -u)
 if [ $? -ne 0 ]; then
     echo "ERROR: Should run only with sudo privilages"
     exit 1
+else
+    echo "Sudo permission verified proceeding"
 fi
 
 dnf list installed nginx
