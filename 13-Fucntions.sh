@@ -12,26 +12,24 @@ else
     echo "Sudo permissions validated proceeding to install"
 fi
 
+VALIDATE(){
+    if [ $1 -ne 0 ]; then
+        echo "$2 installed Failed"
+        exit 1
+    else
+        echo "$2 installation success"
+    fi
+
+}
+
+
+
 dnf install nginx -y
-if [ $? -ne 0 ]; then
-    echo "Nginx installed Failed"
-    exit 1
-else
-    echo "Nginx installation success"
-fi
+VALIDATE $? nginx
 
 dnf install mysql -y
-if [ $? -ne 0 ]; then
-    echo "mysql installed Failed"
-    exit 1
-else
-    echo "mysql installation success"
-fi
+VALIDATE $? mysql
 
 dnf install python3 -y
-if [ $? -ne 0 ]; then
-    echo "python3 installed Failed"
-    exit 1
-else
-    echo "python3 installation success"
-fi
+VALIDATE $? python3
+
