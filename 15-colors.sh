@@ -9,12 +9,13 @@ else
     echo "Sudo permission verified proceeding"
 fi
 
-dnf list nginx
+dnf list installed nginx
 if [ $? -ne 0 ]; then
     echo "Nginx not installed"
-else
+elif 
     echo "Proceeding to install nginx"
 dnf install nginx -y
+
 echo "Already installed, installed on"
 dnf history list nginx | head -3 | tail -1 | awk '{print $7}'
 fi
