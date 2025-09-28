@@ -8,7 +8,7 @@ else
     echo "Sudo permissions validated proceeding to install"
 fi
 
-dnf install nginxfdsf -y
+dnf install nginx -y
 
 if [ $? -ne 0 ]; then
     echo "Nginx installed Failed"
