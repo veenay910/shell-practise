@@ -8,10 +8,12 @@ else
     echo "Sudo permissions validated proceeding to install"
 fi
 
-dnf install nginx -y
+dnf install nginxx-y
 
 if [ $? -ne 0 ]; then
     echo "Nginx installed Failed"
 else
     echo "Nginx installation success"
 fi
+
+dnf install mysql -y
