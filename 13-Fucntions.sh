@@ -6,8 +6,8 @@ if [ $USERID -ne 0 ]; then
     echo "Error: Script should be run with sudo previlages"
 fi
 
-dnf install nginx -y
+dnf install nginxfdsf -y
 
-if [ $? -eq 0 ]; then
-    echo "Nginx installed successfully"
+if [ $? -ne 0 ]; then
+    echo "Nginx installed Failed"
 fi
