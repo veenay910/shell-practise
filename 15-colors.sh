@@ -11,8 +11,7 @@ fi
 
 dnf list installed nginx
 if [ $? -ne 0 ]; then
-    echo "Nginx not installed"
-    echo "proceedin to install nginx"
+    echo "Nginx not installed......proceedin to install nginx"
 dnf install nginx -y
 else [ $? -eq 0 ]; then
     echo "nginx already installed --- skipping"
