@@ -7,3 +7,7 @@ Y="\e[33m"
 N="\e[0m"
 
 echo -e "What is your name $R vinay $N"
+
+read age
+
+echo -e "What is your age $G $age $N"
