@@ -12,4 +12,6 @@ dnf install nginx -y
 
 if [ $? -ne 0 ]; then
     echo "Nginx installed Failed"
+else
+    echo "Nginx installation success"
 fi
