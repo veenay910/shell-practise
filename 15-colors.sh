@@ -7,7 +7,7 @@ N="\e[0m"
 USERID=$(id -u)
 
 if [ $? -ne 0 ]; then
-    echo -e "$R ERROR: $N Should run only with sudo privilages"
+    echo -e "ERROR:  Should run only with sudo privilages"
     exit 1
 else
     echo "Sudo permission verified proceeding"
