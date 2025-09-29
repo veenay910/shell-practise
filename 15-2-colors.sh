@@ -23,6 +23,7 @@ fi
 }
 
 dnf list installed nginx
+
 validate $? "nginx"
 
 dnf list installed mysql
