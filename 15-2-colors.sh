@@ -19,5 +19,5 @@ if [ $? -ne 0 ]; then
     echo "Ngnix not exist, Proceeding to install nginx"
     dnf install nginx -y
 else
-    echo "Already installed"
+    echo "Already installed ... SKIPPING"
 fi    
