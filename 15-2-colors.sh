@@ -7,5 +7,5 @@ N="\e[0m"
 USERID=$(id -u)
 
 if [ $USERID -ne 0 ]; then
-    echo "Please run with $R sudo $N "
+    echo -e "Please run with $R sudo $N "
 fi
