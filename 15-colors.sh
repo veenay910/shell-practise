@@ -6,7 +6,7 @@ Y="\e[33m"
 N="\e[0m"
 USERID=$(id -u)
 
-if [ $? -ne 0 ]; then
+if [ $USERID -ne 0 ]; then
     echo -e "ERROR:  Should run only with sudo privilages"
     exit 1
 else
