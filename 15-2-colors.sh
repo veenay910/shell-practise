@@ -17,4 +17,7 @@ dnf list installed nginx
 
 if [ $? -ne 0 ]; then
     echo -e "Ngnix not exist"
+else
+    echo -e "Proceeding to install nginx"
+    dnf install nginx
 fi    
