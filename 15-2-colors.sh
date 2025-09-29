@@ -11,3 +11,9 @@ if [ $USERID -ne 0 ]; then
 else
     echo -e "Sudo permissions validated $G PROCEEDING $N "
 fi
+
+dnf list installed nginx
+
+if [ $? -ne 0 ]; then
+    echo -e "Ngnix not exist"
+fi    
