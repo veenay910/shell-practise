@@ -14,7 +14,7 @@ else
 fi
 
 validate=(){
-    if [ $1 -ne  0 ]; then
+    if [ "$1" -ne  0 ]; then
     echo "$2 not exist, Proceeding to install $2"
 fi  
 }
