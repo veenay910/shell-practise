@@ -13,8 +13,8 @@ else
     echo -e "Sudo permissions validated $G PROCEEDING $N "
 fi
 
-validate=(){
-    if [ "$1" -ne  0 ]; then
+validate(){
+if [ $1 -ne  0 ]; then
     echo "$2 not exist, Proceeding to install $2"
 fi  
 }
