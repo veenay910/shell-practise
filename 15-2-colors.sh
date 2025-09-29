@@ -19,5 +19,4 @@ if [ $? -ne 0 ]; then
     echo "Ngnix not exist"
 else
     echo "Proceeding to install nginx"
-    dnf install nginx
 fi    
