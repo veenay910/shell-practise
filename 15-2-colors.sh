@@ -8,4 +8,6 @@ USERID=$(id -u)
 
 if [ $USERID -ne 0 ]; then
     echo -e "Please run with $R sudo $N "
+else
+    echo -e "Sudo permissions validated $G sPrceeding $N "
 fi
