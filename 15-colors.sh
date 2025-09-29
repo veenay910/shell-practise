@@ -25,7 +25,7 @@ fi
 }
 
 dnf list installed nginx
-validate $? "nginx"
+Validate $? "nginx"
 
 
 
