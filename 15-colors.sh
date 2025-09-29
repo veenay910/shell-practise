@@ -13,15 +13,22 @@ else
     echo "Sudo permission verified proceeding"
 fi
 
-dnf list installed nginx
-if [ $? -ne 0 ]; then
-    echo -e "Nginx not installed......$G proceedin to install nginx $N"
+Validate(){
+    if [ $1 -ne 0 ]; then
+    echo -e "$2 not installed......$G proceedin to install $2 $N"
 dnf install nginx -y
 else
-    echo -e "nginx already installed --- $Y skipping $N"
-    echo "Already installed on "
-dnf history list nginx | head -3 | tail -1 | awk '{print $7}'
+    echo -e "$2 already installed --- $Y skipping $N"
+    echo "Already installed on"
+dnf history list $2 | head -3 | tail -1 | awk '{print $7}'
 fi
+}
+
+dnf list installed nginx
+validate $? "nginx"
+
+
+
 
 
 
