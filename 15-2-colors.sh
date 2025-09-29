@@ -13,11 +13,21 @@ else
     echo -e "Sudo permissions validated $G PROCEEDING $N "
 fi
 
-dnf list installed nginx
-
-if [ $? -ne 0 ]; then
-    echo "Ngnix not exist, Proceeding to install nginx"
-    dnf install nginx -y
+validate=(){
+    if [ $1 -ne 0 ]; then
+    echo "$2 not exist, Proceeding to install $2"
+    dnf install $2 -y
 else
     echo "Already installed ... SKIPPING"
-fi    
+fi  
+}
+
+dnf list installed nginx
+validate $? "nginx"
+
+dnf list installed mysql
+ validate $? "mysql"
+
+dnf list installed python3
+validate $? "python3"
+
