@@ -1,6 +1,6 @@
 #!/bin/bash
 
-USEID=$(id -u)
+USERID=$(id -u)
 
 echo "print $USERID "
 
