@@ -10,7 +10,7 @@ N='\033[0m'
 
 dnf list installed nginx
 if [ $? -ne 0 ]; then
-    echo "Ngnix not exit"
+    echo "Ngnix not exit ...Proceeding to install $G Nginx $N "
     dnf install nginx -y
 else 
     echo -e "Ngnix already installed ...$B skipping $N "
