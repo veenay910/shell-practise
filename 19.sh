@@ -1,3 +1,3 @@
 #!/bin/bahs
 
-mkdir -p "var/log/test"
+mkdir -p "/var/log/test"
