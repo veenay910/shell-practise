@@ -14,7 +14,7 @@ LOG_FILE="$LOG_FOLDER/$SCRIPT_NAME.log"
 
 
 
-dnf list installed nginx
+dnf list installed nginx &>>$LOG_FILE
 if [ $? -ne 0 ]; then
     echo -e "Ngnix not exit ...Proceeding to install $G Nginx $N "
     dnf install nginx -y
