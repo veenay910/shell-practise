@@ -14,7 +14,7 @@ N='\033[0m'
 
 
 
-dnf list installed nginx &>>$LOG_FILE
+dnf list installed nginx
 if [ $? -ne 0 ]; then
     echo -e "Ngnix not exit ...Proceeding to install $G Nginx $N "
     dnf install nginx -y
