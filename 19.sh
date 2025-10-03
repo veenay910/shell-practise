@@ -5,4 +5,5 @@ touch /var/log/test/abc.log
 LOGS="/var/log/test/abc.log"
 
 
-dnf list installed nginx &>$LOGS 
+dnf list installed nginx &>>$LOGS
+dnf install nginx &>>LOGS 
