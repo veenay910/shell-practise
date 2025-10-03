@@ -9,10 +9,12 @@ B='\033[0;34m'
 N='\033[0m'
 
 LOG_FOLDER="/var/log/shell-script"
-LOG_FILE=$0 
+Script_name=$(echo $0)
+LOG_FILE=$LOG_FOLDER/$Script_name.log
 
 
-dnf list installed nginx
+
+dnf list installed nginx &>>$LOG_FILE
 if [ $? -ne 0 ]; then
     echo -e "Ngnix not exit ...Proceeding to install $G Nginx $N "
     dnf install nginx -y
