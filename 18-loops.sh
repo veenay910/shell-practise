@@ -1,4 +1,6 @@
 #!/bin/bash
 
 USEID=(id -u)
-echo "$USERID"
+
+echo "print $USERID "
+
