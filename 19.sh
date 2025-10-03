@@ -13,7 +13,8 @@ else
 fi
 
 #create log file
-Script_file=$(echo $0)
+LOG_FOLDER="/var/log/shellscript"
+Script_file=$( echo $0 )
 echo "$Script_file"
 LOG_FILE=$LOG_FOLDER/$Script_file.log
 
