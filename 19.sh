@@ -13,8 +13,8 @@ else
 fi
 
 #create log file
-Script_file=echo "$0.log"
+Script_file=$(echo $0)
 echo "$Script_file"
-LOG_FILE=$LOG_FOLDER/$Script_file
+LOG_FILE=$LOG_FOLDER/$Script_file.log
 
 dnf list installed nginx &>>LOG_FILE
