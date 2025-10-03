@@ -15,4 +15,6 @@ fi
 #create log file
 Script_file=$0.log
 echo "$Script_file"
+LOG_FILE=$LOG_FOLDER/$Script_file
 
+dnf list installed nginx &>>LOG_FILE
