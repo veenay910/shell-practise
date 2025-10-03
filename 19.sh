@@ -6,4 +6,4 @@ LOGS="/var/log/test/abc.log"
 
 
 dnf list installed nginx &>>$LOGS
-dnf install nginx &>>LOGS 
+dnf install nginx -y &>>$LOGS 
