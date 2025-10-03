@@ -6,6 +6,7 @@ echo " $SCRIPT_NAME "
 
 
 mkdir -p LOG_FOLDER "/var/log/shellscript"
+touch 19.log "/var/log/shellscript"
 if [ $? -ne 0 ]; then
     echo " Created folder"
 else    
