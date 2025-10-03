@@ -12,4 +12,7 @@ else
     echo "Folder alredy exist"
 fi
 
+#create log file
+Script_file=$0.log
+echo "$Script_file"
 
