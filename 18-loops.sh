@@ -8,9 +8,9 @@ G='\033[0;32m'
 B='\033[0;34m'
 N='\033[0m'
 
-#LOG_FOLDER="/var/log/shell-script"
-#Script_name=$( echo $0 )
-#LOG_FILE="$LOG_FOLDER/$Script_name.log"
+LOG_FOLDER="/var/log/shell-script"
+SCRIPT_NAME=$( echo $0 )
+LOG_FILE="$LOG_FOLDER/$SCRIPT_NAME.log"
 
 
 
