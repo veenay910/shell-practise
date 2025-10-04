@@ -15,4 +15,9 @@ LOGS="/var/log/test/abc.log"
 
 
 dnf list installed nginx &>>$LOGS
-dnf install nginx -y &>>$LOGS
+if [ $? -ne 0 ]; then
+    echo "nginx not exist...Proceeding to install"
+    dnf install nginx -y &>>$LOGS
+else
+    echo "nginx alredy installed...SKIPPING"
+fi
