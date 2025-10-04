@@ -18,6 +18,11 @@ dnf list installed nginx &>>$LOGS
 if [ $? -ne 0 ]; then
     echo "nginx not exist...Proceeding to install"
     dnf install nginx -y &>>$LOGS
+    if [ $? -ne =0 ]; then
+    echo "Installation failure"
+    else
+    echo "Installation success"
+    fi
 else
     echo "nginx alredy installed...SKIPPING"
 fi
