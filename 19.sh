@@ -31,3 +31,13 @@ if [ $? -ne 0 ]; then
 else
     echo "nginx alredy installed...SKIPPING"
 fi
+
+dnf list installed mysql &>>$LOGS
+if [ $? -ne 0 ]; then
+    echo "mysql not exist...Proceeding to install"
+    dnf install mysql -y &>>$LOGS
+    VALIDATE $? "mysql"
+else
+    echo "mysql alredy installed...SKIPPING"
+fi
+
