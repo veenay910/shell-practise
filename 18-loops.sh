@@ -23,15 +23,18 @@ VALIDATE(){
     fi
 }
 
-dnf list installed nginx &>>$LOG_FILE
-if [ $? -ne 0 ]; then
-    echo -e "Ngnix not exit ...Proceeding to install $G Nginx $N "
-    dnf install nginx -y &>>$LOG_FILE
-    VALIDATE $? "nginx"
-else 
-    echo -e "Ngnix already installed ...$B skipping $N "
 
+for package in $@
+do
+dnf list installed $package &>>$LOG_FILE
+if [ $? -ne 0 ]; then
+    dnf install $package -y &>>$LOG_FILE
+    VALIDATE $? "$package"
+else
+    echo -e "$package already exist ... $Y SKIPPING $N" | tee -a $LOG_FILE
 fi
+
+done
 
 
 
