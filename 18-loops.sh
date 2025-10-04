@@ -12,7 +12,7 @@ LOG_FOLDER="/var/log/shell-script"
 SCRIPT_NAME=$( echo $0 )
 LOG_FILE="$LOG_FOLDER/$SCRIPT_NAME.log"
 
-
+mkdir -p $LOG_FOLDER
 
 dnf list installed nginx &>>$LOG_FILE
 if [ $? -ne 0 ]; then
