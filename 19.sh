@@ -1,5 +1,14 @@
 #!/bin/bahs
 
+USERID=$(id -u)
+
+if [ $USERID -ne 0 ]; then
+    echo "Script should be run through sudo permissins"
+    exit 1
+else
+    echo "Sudo permissionation validated...Proceeding"
+fi
+
 mkdir -p "/var/log/test"
 touch /var/log/test/abc.log
 LOGS="/var/log/test/abc.log"
