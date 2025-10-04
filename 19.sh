@@ -13,17 +13,21 @@ mkdir -p "/var/log/test"
 touch /var/log/test/abc.log
 LOGS="/var/log/test/abc.log"
 
+VALIDATE(){
+    if [ $1 -ne 0 ]; then
+    echo "$2 Installation failure"
+    exit 1
+    else
+    echo "$2 Installation success"
+    fi
+}
+
 
 dnf list installed nginx &>>$LOGS
 if [ $? -ne 0 ]; then
     echo "nginx not exist...Proceeding to install"
-    dnf install nginxx -y &>>$LOGS
-    if [ $? -ne 0 ]; then
-    echo "Installation failure"
-    exit 1
-    else
-    echo "Installation success"
-    fi
+    dnf install nginx -y &>>$LOGS
+    VALIDATE $? "nginx"
 else
     echo "nginx alredy installed...SKIPPING"
 fi
