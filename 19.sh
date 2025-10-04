@@ -3,7 +3,7 @@
 USERID=$(id -u)
 
 if [ $USERID -ne 0 ]; then
-    echo "Script should be run through sudo permissins"
+    echo "Sudo permission validatoin falied...exiting"
     exit 1
 else
     echo "Sudo permissionation validated...Proceeding"
