@@ -3,10 +3,10 @@
 USERID=$(id -u)
 
 if [ $USERID -ne 0 ]; then
-    echo "Sudo permission validatoin falied...exiting"
+    echo "Sudo permission validatoin falied...exiting" | tee -a $LOGS
     exit 1
 else
-    echo "Sudo permissionation validated...Proceeding"
+    echo "Sudo permissionation validated...Proceeding" | tee -a $LOGS
 fi
 
 mkdir -p "/var/log/test"
@@ -15,10 +15,10 @@ LOGS="/var/log/test/abc.log"
 
 VALIDATE(){
     if [ $1 -ne 0 ]; then
-    echo "$2 Installation failure"
+    echo "$2 Installation failure" | tee -a $LOGS
     exit 1
     else
-    echo "$2 Installation success"
+    echo "$2 Installation success" | tee -a $LOGS
     fi
 }
 
