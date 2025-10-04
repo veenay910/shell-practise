@@ -9,7 +9,7 @@ B='\033[0;34m'
 N='\033[0m'
 
 LOG_FOLDER="/var/log/shell-script"
-SCRIPT_NAME=$( echo $0 )
+SCRIPT_NAME=$(echo $0)
 LOG_FILE="$LOG_FOLDER/$SCRIPT_NAME.log"
 
 mkdir -p $LOG_FOLDER
