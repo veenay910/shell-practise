@@ -23,13 +23,21 @@ VALIDATE(){
 }
 
 
-dnf list installed nginx &>$LOGS
+dnf list installed nginx &>>$LOGS
 if [ $? -ne 0 ]; then
     echo "nginx not exist...Proceeding to install" | tee -a $LOGS
-    dnf install nginx -y &>$LOGS
+    dnf install nginx -y &>>$LOGS
     VALIDATE $? "nginx"
 else
     echo "nginx alredy installed...SKIPPING" | tee -a $LOGS
 fi
 
+dnf list installed mysql &>>$LOGS
+if [ $? -ne 0 ]; then
+    echo "mysql not exist...Proceeding to install" | tee -a $LOGS
+    dnf install mysql -y &>>$LOGS
+    VALIDATE $? "mysql"
+else
+    echo "mysql alredy installed...SKIPPING" | tee -a $LOGS
+fi
 
