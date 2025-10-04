@@ -14,10 +14,20 @@ LOG_FILE="$LOG_FOLDER/$SCRIPT_NAME.log"
 
 mkdir -p $LOG_FOLDER
 
+VALIDATE(){
+    if [ $1 -ne 0 ]; then
+    echo "$2 Installation failed"
+    exit 1
+    else
+    echo "$2 Installation succeeded"
+    fi
+}
+
 dnf list installed nginx &>>$LOG_FILE
 if [ $? -ne 0 ]; then
     echo -e "Ngnix not exit ...Proceeding to install $G Nginx $N "
-    dnf install nginx -y
+    dnf install nginx -y &>>$LOG_FILE
+    VALIDATE $? "nginx"
 else 
     echo -e "Ngnix already installed ...$B skipping $N "
 
